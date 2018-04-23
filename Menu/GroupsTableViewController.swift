@@ -12,16 +12,14 @@ let groupCellIdentifier = "groupCell"
 
 class GroupsTableViewController: UITableViewController {
 
-    var menuManager:MenuManager {
-        return MenuManager.init()
-    }
-    
-    var groups:[Group] {
-        return menuManager.fetchGroups()
-    }
+    var menuManager:MenuManager!
+    var groups:[Group] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        menuManager = MenuManager.init()
+        self.reload()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,6 +30,11 @@ class GroupsTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func reload() {
+        groups = menuManager.fetchGroups()
+        self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -58,16 +61,10 @@ class GroupsTableViewController: UITableViewController {
     // MARK: - Buttons
     @IBAction func addButton(_ sender: UIBarButtonItem) {
         
+        _ = menuManager?.insertGroup(name: "Test Group", imagePath: "Test path")
+        menuManager?.save()
         
-        let newGroup = menuManager.insertGroup(name: "Test Group", imagePath: "Test path")
-        menuManager.save()
-//        do {
-//            try menuManager.backgroundContext.save()
-//        }catch {
-//            print("error")
-//        }
-        
-        self.tableView.reloadData()
+        self.reload()
         
     }
     
