@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -49,11 +50,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="XUS-Pd-1qG">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ddz-J1-jWo">
-                            <connections>
-                                <action selector="addButton:" destination="vcS-y6-oUb" id="s4n-GU-8RF"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Add" id="Ddz-J1-jWo">
+                                <connections>
+                                    <action selector="addButton:" destination="vcS-y6-oUb" id="s4n-GU-8RF"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Remove" id="7yM-Nq-4ZG">
+                                <connections>
+                                    <action selector="removeButton:" destination="vcS-y6-oUb" id="xbu-rd-a1r"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vij-JT-4OZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

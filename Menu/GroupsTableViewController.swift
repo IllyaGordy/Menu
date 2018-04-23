@@ -61,10 +61,22 @@ class GroupsTableViewController: UITableViewController {
     // MARK: - Buttons
     @IBAction func addButton(_ sender: UIBarButtonItem) {
         
-        _ = menuManager?.insertGroup(name: "Test Group", imagePath: "Test path")
-        menuManager?.save()
+        _ = menuManager.insertGroup(name: "Test Group", imagePath: "Test path")
+        menuManager.save()
         
         self.reload()
+        
+    }
+    @IBAction func removeButton(_ sender: UIBarButtonItem) {
+        
+        if (groups.count > 0) {
+            let group = groups[0]
+            
+            menuManager.remove(objectID: group.objectID)
+            menuManager.save()
+            self.reload()
+        }
+        
         
     }
     
