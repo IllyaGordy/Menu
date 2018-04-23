@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		49589758208570CE00096A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49589757208570CE00096A18 /* AppDelegate.swift */; };
-		4958975A208570CE00096A18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49589759208570CE00096A18 /* ViewController.swift */; };
 		4958975D208570CE00096A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4958975B208570CE00096A18 /* Main.storyboard */; };
 		49589760208570CE00096A18 /* Menu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4958975E208570CE00096A18 /* Menu.xcdatamodeld */; };
 		49589762208570CE00096A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49589761208570CE00096A18 /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		49589770208570CE00096A18 /* MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958976F208570CE00096A18 /* MenuTests.swift */; };
 		49F0AC9E208D3D5A0019F51D /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0AC9D208D3D5A0019F51D /* MenuManager.swift */; };
 		49F0AC9F208E755F0019F51D /* Menu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4958975E208570CE00096A18 /* Menu.xcdatamodeld */; };
+		49F0ACA1208E83E40019F51D /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0ACA0208E83E40019F51D /* GroupsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 /* Begin PBXFileReference section */
 		49589754208570CE00096A18 /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49589757208570CE00096A18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49589759208570CE00096A18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4958975C208570CE00096A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4958975F208570CE00096A18 /* Menu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Menu.xcdatamodel; sourceTree = "<group>"; };
 		49589761208570CE00096A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		4958976F208570CE00096A18 /* MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTests.swift; sourceTree = "<group>"; };
 		49589771208570CE00096A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49F0AC9D208D3D5A0019F51D /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		49F0ACA0208E83E40019F51D /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,13 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				49589757208570CE00096A18 /* AppDelegate.swift */,
-				49589759208570CE00096A18 /* ViewController.swift */,
 				4958975B208570CE00096A18 /* Main.storyboard */,
 				49589761208570CE00096A18 /* Assets.xcassets */,
 				49589763208570CE00096A18 /* LaunchScreen.storyboard */,
 				49589766208570CE00096A18 /* Info.plist */,
 				4958975E208570CE00096A18 /* Menu.xcdatamodeld */,
 				49F0AC9D208D3D5A0019F51D /* MenuManager.swift */,
+				49F0ACA0208E83E40019F51D /* GroupsTableViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -207,8 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F0AC9E208D3D5A0019F51D /* MenuManager.swift in Sources */,
+				49F0ACA1208E83E40019F51D /* GroupsTableViewController.swift in Sources */,
 				49589760208570CE00096A18 /* Menu.xcdatamodeld in Sources */,
-				4958975A208570CE00096A18 /* ViewController.swift in Sources */,
 				49589758208570CE00096A18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

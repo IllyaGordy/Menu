@@ -132,6 +132,10 @@ class MenuTests: XCTestCase {
         // when fetch
         let results = menuManager.fetchGroups()
         
+//        for item in results {
+//            print("\(String(describing: item.name))")
+//        }
+        
         // Assert return five todo items
         XCTAssertEqual(results.count, 5)
     }
