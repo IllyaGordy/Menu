@@ -14,6 +14,8 @@
 		49589762208570CE00096A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49589761208570CE00096A18 /* Assets.xcassets */; };
 		49589765208570CE00096A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49589763208570CE00096A18 /* LaunchScreen.storyboard */; };
 		49589770208570CE00096A18 /* MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958976F208570CE00096A18 /* MenuTests.swift */; };
+		49F0AC9E208D3D5A0019F51D /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0AC9D208D3D5A0019F51D /* MenuManager.swift */; };
+		49F0AC9F208E755F0019F51D /* Menu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4958975E208570CE00096A18 /* Menu.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		4958976B208570CE00096A18 /* MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4958976F208570CE00096A18 /* MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTests.swift; sourceTree = "<group>"; };
 		49589771208570CE00096A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F0AC9D208D3D5A0019F51D /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 				49589763208570CE00096A18 /* LaunchScreen.storyboard */,
 				49589766208570CE00096A18 /* Info.plist */,
 				4958975E208570CE00096A18 /* Menu.xcdatamodeld */,
+				49F0AC9D208D3D5A0019F51D /* MenuManager.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -202,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F0AC9E208D3D5A0019F51D /* MenuManager.swift in Sources */,
 				49589760208570CE00096A18 /* Menu.xcdatamodeld in Sources */,
 				4958975A208570CE00096A18 /* ViewController.swift in Sources */,
 				49589758208570CE00096A18 /* AppDelegate.swift in Sources */,
@@ -212,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F0AC9F208E755F0019F51D /* Menu.xcdatamodeld in Sources */,
 				49589770208570CE00096A18 /* MenuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
