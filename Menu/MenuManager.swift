@@ -82,6 +82,27 @@ class MenuManager {
         return item
     }
     
+    func updateItem(item: Item, name: String?, detail: String?, imagePath: String?, price: Double?) -> Item? {
+        
+        if let name = name {
+            item.name = name
+        }
+        
+        if let detail = detail {
+            item.detail = detail
+        }
+        
+        if let imagePath = imagePath {
+            item.imagePath = imagePath
+        }
+        
+        if let price = price {
+            item.price = price
+        }
+        
+        return item
+    }
+    
     // TODO: refactor to take in a parameter instead of a black state
     func fetchGroups() -> [Group] {
         let request:NSFetchRequest<Group> = Group.fetchRequest()

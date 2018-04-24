@@ -30,9 +30,10 @@ class GroupViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         itemsTableView.delegate = self
         itemsTableView.dataSource = self
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         self.reload()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -113,7 +114,7 @@ class GroupViewController: UIViewController, UITableViewDelegate, UITableViewDat
                                    name: "Test Item",
                                    detail: "Test Detail",
                                    imagePath: "Test imagePath",
-                                   price: 10.11)
+                                   price: 10.1111)
         menuManager.save()
         
         self.reload()
