@@ -16,6 +16,8 @@
 		49F0AC9E208D3D5A0019F51D /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0AC9D208D3D5A0019F51D /* MenuManager.swift */; };
 		49F0AC9F208E755F0019F51D /* Menu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4958975E208570CE00096A18 /* Menu.xcdatamodeld */; };
 		49F0ACA1208E83E40019F51D /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0ACA0208E83E40019F51D /* GroupsTableViewController.swift */; };
+		49F0ACA4208EB6A70019F51D /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0ACA2208EB3B60019F51D /* GroupViewController.swift */; };
+		49F0ACA6208ECEEA0019F51D /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0ACA5208ECEEA0019F51D /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		49589771208570CE00096A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49F0AC9D208D3D5A0019F51D /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		49F0ACA0208E83E40019F51D /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
+		49F0ACA2208EB3B60019F51D /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		49F0ACA5208ECEEA0019F51D /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				4958975E208570CE00096A18 /* Menu.xcdatamodeld */,
 				49F0AC9D208D3D5A0019F51D /* MenuManager.swift */,
 				49F0ACA0208E83E40019F51D /* GroupsTableViewController.swift */,
+				49F0ACA2208EB3B60019F51D /* GroupViewController.swift */,
+				49F0ACA5208ECEEA0019F51D /* ItemViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 				49F0ACA1208E83E40019F51D /* GroupsTableViewController.swift in Sources */,
 				49589760208570CE00096A18 /* Menu.xcdatamodeld in Sources */,
 				49589758208570CE00096A18 /* AppDelegate.swift in Sources */,
+				49F0ACA4208EB6A70019F51D /* GroupViewController.swift in Sources */,
+				49F0ACA6208ECEEA0019F51D /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

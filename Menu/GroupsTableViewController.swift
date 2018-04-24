@@ -8,24 +8,23 @@
 
 import UIKit
 
-let groupCellIdentifier = "groupCell"
+private let groupCellIdentifier = "groupCell"
+private let groupDetailSegue = "groupDetailSegue"
 
 class GroupsTableViewController: UITableViewController {
 
     var menuManager:MenuManager!
     var groups:[Group] = []
+    var groupToPass:Group?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         menuManager = MenuManager.init()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         self.reload()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +43,6 @@ class GroupsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return groups.count
     }
     
@@ -56,6 +54,23 @@ class GroupsTableViewController: UITableViewController {
         cell.detailTextLabel?.text = group.imagePath
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.groupToPass = groups[indexPath.row]
+        performSegue(withIdentifier: groupDetailSegue, sender: self)
+    }
+    
+    // MARK: - Transitions
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == groupDetailSegue {
+            if let groupVC = segue.destination as? GroupViewController {
+                groupVC.menuManager = self.menuManager
+                groupVC.currentGroup = self.groupToPass
+            }
+        }
     }
     
     // MARK: - Buttons

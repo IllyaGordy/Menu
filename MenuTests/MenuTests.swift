@@ -68,7 +68,7 @@ class MenuTests: XCTestCase {
         
         func insertGroup(name: String, imagePath: String) -> Group? {
             
-            let obj = NSEntityDescription.insertNewObject(forEntityName: "Group", into: mockPersistantContainer.viewContext)
+            let obj = NSEntityDescription.insertNewObject(forEntityName: Entities.Group.rawValue, into: mockPersistantContainer.viewContext)
             
             obj.setValue(name, forKey: GroupAttributes.Name.rawValue)
             obj.setValue(imagePath, forKey: GroupAttributes.ImagePath.rawValue)
@@ -111,6 +111,9 @@ class MenuTests: XCTestCase {
     // 2. fetchGroups() -> should return correct number of Groups
     // 3. remove() -> should remove an item from database
     // 4. save() -> should call NSManagedContext.save()
+    // 5. TODO insertItem() -> should return Item
+    // 6. TODO fetchItems() -> should return correct number of Groups
+    // 7. TODO updateGroup() -> should return newly updated Group
     
     // Test 1 - insertGroup
     func test_create_group() {
@@ -131,10 +134,6 @@ class MenuTests: XCTestCase {
         
         // when fetch
         let results = menuManager.fetchGroups()
-        
-//        for item in results {
-//            print("\(String(describing: item.name))")
-//        }
         
         // Assert return five todo items
         XCTAssertEqual(results.count, 5)
