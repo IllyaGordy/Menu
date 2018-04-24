@@ -82,17 +82,4 @@ class GroupsTableViewController: UITableViewController {
         self.reload()
         
     }
-    @IBAction func removeButton(_ sender: UIBarButtonItem) {
-        
-        if (groups.count > 0) {
-            let group = groups[0]
-            
-            menuManager.remove(objectID: group.objectID)
-            menuManager.save()
-            self.reload()
-        }
-        
-        
-    }
-    
 }
