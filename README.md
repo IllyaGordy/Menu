@@ -19,3 +19,4 @@ Not full implementation, but have done the majority for the functionality. Futur
 3. More Unit Tests for the Item + update group
 4. Better UI, improve the style of all of the tableViews + detailed views. Should optimize for the photos better
 5. Do more testing for the edge cases
+6. TEST
